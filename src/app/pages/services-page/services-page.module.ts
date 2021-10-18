@@ -12,6 +12,7 @@ import { ServicesPageComponent } from './services-page.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [ServicesPageComponent]
 })
 export class ServicesPageModule { }

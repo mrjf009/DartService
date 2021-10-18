@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarModule } from './comnon/modules/nav-bar/nav-bar.module';
+import { NavBarModule } from './common/modules/nav-bar/nav-bar.module';
+import { StartPageModule } from './pages/start-page/start-page.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { NavBarModule } from './comnon/modules/nav-bar/nav-bar.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NavBarModule
+    NavBarModule,
+    StartPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
