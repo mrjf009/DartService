@@ -1,15 +1,50 @@
-.BGheader {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+:host {
+  flex: 1;
+}
+
+.toolbar-wrapper {
   display: flex;
+  flex: 1;
+  align-items: center;
+  height: 90px;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  flex-direction: column;
+}
+
+.BGheader {
+  padding-top: 2em;
+  display: flex;
   width: 100%;
   height: 750px;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(3, 1fr);
   background-image: url(..\..\..\..\assets\bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: space-evenly;
-  grid-template-columns: repeat(3, 1fr);
+}
+
+.nav-bar-menu {
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  padding-left: 2.5em; 
+  padding-right: 2.5em;
+}
+
+.sign-up {
+  background-color: transparent;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: white;
+  height: 25px;
+  width: 80px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  line-height: 1.6px;
+
+  &:hover {
+    background-color: white;
+    color: 0dbabe;
+  }
 }
