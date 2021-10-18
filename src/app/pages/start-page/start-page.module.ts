@@ -10,6 +10,9 @@ import { StartPageComponent } from './start-page.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    StartPageComponent
   ]
 })
 export class StartPageModule { }

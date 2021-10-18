@@ -10,6 +10,7 @@ import { OurTeamPageComponent } from './our-team-page.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [OurTeamPageComponent]
 })
 export class OurTeamPageModule { }
