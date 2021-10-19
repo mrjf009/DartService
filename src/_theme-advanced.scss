@@ -1,0 +1,100 @@
+@use '~@angular/material' as mat;
+
+@include mat.core(
+  mat.define-typography-config(
+    $font-family: 'Open Sans',
+    $headline: mat.define-typography-level(26px, 38px, 600),
+    $title: mat.define-typography-level(21px, 30px, 600),
+    $subheading-2: mat.define-typography-level(14px, 22px, 700),
+    $subheading-1: mat.define-typography-level(14px, 19px, 600),
+    $body-1: mat.define-typography-level(14px, 19px, 400)
+  )
+);
+
+$form-background: #BFC8CB;
+$light-text: #ffffff;
+$dark-text: #000000;
+$light-allow-text: #C7E858;
+$dark-allow-text: #2F7D67;
+
+$app-blue-palette: (
+    50 : #e2f4fa,
+    100 : #b7e4f3,
+    200 : #87d2eb,
+    300 : #56c0e3,
+    400 : #32b3dd,
+    500 : #0ea5d7,
+    600 : #0c9dd3,
+    700 : #0a93cd,
+    800 : #088ac7,
+    900 : #127090,
+    A100 : #b6c6cb,
+    A200 : #85a0a9,
+    A300 : #547a86,
+    A400 : #2f5e6c,
+    A500 : #0a4152,
+    A600 : #093b4b,
+    A700 : #073241,
+    A800 : #052a38,
+    A900 : #031c28,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A300 : #000000,
+        A400 : #000000,
+        A500 : #ffffff,
+        A600 : #ffffff,
+        A700 : #ffffff,
+        A800 : #ffffff,
+        A900 : #ffffff,
+    )
+);
+
+$app-orange-palette: (
+  50 : #fdf2e3,
+  100 : #fbddb9,
+  200 : #f9c78b,
+  300 : #f6b15d,
+  400 : #f4a03a,
+  500 : #f28f17,
+  600 : #f08714,
+  700 : #ee7c11,
+  800 : #ec720d,
+  900 : #e86007,
+  contrast: (
+    50 : $dark-text,
+    100 : $dark-text,
+    200 : $dark-text,
+    300 : $dark-text,
+    400 : $dark-text,
+    500 : $dark-text,
+    600 : $dark-text,
+    700 : $dark-text,
+    800 : $dark-text,
+    900 : $light-text,
+  )
+);
+
+$mat-primary: mat.define-palette($app-blue-palette);
+$mat-accent: mat.define-palette($app-orange-palette);
+$mat-warn: mat.define-palette(mat.$red-palette);
+
+$mat-theme: mat.define-light-theme((
+  color: (
+    primary: $mat-primary,
+    accent: $mat-accent,
+    warn: $mat-warn,
+  )
+));
+
+@include mat.all-component-themes($mat-theme);
