@@ -1,0 +1,22 @@
+.formWraper {
+  width: 70%;
+  height: 30vh;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input {
+  margin-top: 2%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.inputShort {
+  width: 45%;
+  height: 20%;
+}
+.imputLarge {
+  width: 100%;
+  height: 40%;
+}
