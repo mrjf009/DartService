@@ -1,1 +1,116 @@
-<p>start-page works!</p>
+<!---start page////////////////////////////////////////////////////////////////////////////////////////-->
+<section class="BG-start-page">
+  <div class="toolbar-wrapper">
+    <div class="left-block">
+      <a class="raleway-bold"
+        >LOREM IPSUM <br />
+        DOLOR SIT AMET</a
+      >
+      <br />
+      <br />
+      <a class="raleway-regular"
+        >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamclaboris nisi ut aliquip ex
+        ea commodo consequat.</a
+      >
+      <br />
+      <br />
+      <div>
+        <button mat-raised-button class="left-buttons" type="submit">
+          BUY NOW
+        </button>
+        <button
+          style="margin-left: 2em"
+          mat-raised-button
+          class="left-buttons"
+          type="submit"
+        >
+          TRY FOR FREE
+        </button>
+      </div>
+    </div>
+
+    <div class="wrapper" (click)="toggleVideo()">
+      <video class="video" #videoPlayer>
+        <source src="..\..\..\assets\video_preview_h264.mp4" type="video/mp4" />
+      </video>
+      <div *ngIf="videoPlayer?.paused" class="playpause"></div>
+    </div>
+  </div>
+</section>
+<!--"easy & useful" template///////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<section class="ea-section">
+  <div class="toolbar-wrapper2" style="text-align: -webkit-center">
+    <div>
+      <a class="semi-bold-text">Easy & Useful</a> <br />
+      <br />
+      <a class="semi-bold-text2">Project Managment Tool</a> <br />
+      <br />
+      <a class="regular-text" style="display: flex; width: 50%"
+        >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud
+      </a>
+    </div>
+    <div class="eu-columns-div">
+      <div class="eu-columns">
+        <img src="..\..\..\assets\sp-icon-1.png" /> <br />
+        <a class="icon-bold-text">Title Goes Here</a> <br />
+        <a class="icon-regular-text"
+          >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.</a
+        >
+      </div>
+      <div class="eu-columns">
+        <img src="..\..\..\assets\sp-icon-2.png" /> <br />
+        <a class="icon-bold-text">Title Goes Here</a> <br />
+        <a class="icon-regular-text"
+          >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.</a
+        >
+      </div>
+      <div class="eu-columns">
+        <img src="..\..\..\assets\sp-icon-3.png" /> <br />
+        <a class="icon-bold-text">Title Goes Here</a> <br />
+        <a class="icon-regular-text"
+          >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.</a
+        >
+      </div>
+    </div>
+    <button mat-raised-button class="get-started-button" type="submit">
+      GET STARTED
+    </button>
+    <div class="templates-row">
+      <div class="template-business" style="background-color: #80d8ff">
+        <img src="..\..\..\assets\icon-business.png" />
+        <a class="template-text template-bold-text"
+          >12000+ <br />
+          Business</a
+        >
+      </div>
+      <div class="template-business" style="background-color: #82b1ff">
+        <img src="..\..\..\assets\icon-downloads.png" />
+        <a class="template-text template-bold-text"
+          >60000+ <br />
+          Downloads</a
+        >
+      </div>
+      <div class="template-business" style="background-color: #b388ff">
+        <img src="..\..\..\assets\icon-installs.png" />
+        <a class="template-text template-bold-text"
+          >30000+ <br />
+          Free Installs</a
+        >
+      </div>
+      <div class="template-business" style="background-color: #ea80fc">
+        <img src="..\..\..\assets\icon-users.png" />
+        <a class="template-text template-bold-text"
+          >40000+ <br />
+          Pro Users</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
