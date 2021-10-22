@@ -3,4 +3,30 @@
   height: 200px;
   background-color: #061e37;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topSide {
+  margin-top: 30px;
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.imgTextLogo {
+  margin-left: 10px;
+}
+.miniNavBar {
+  display: flex;
+}
+.navLinc {
+  color: white;
+  padding: 10px;
+  margin-right: 20px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.navLinc:hover {
+  background-color: #1de9b6;
 }
