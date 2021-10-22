@@ -6,14 +6,20 @@
   flex-direction: column;
   align-items: center;
 }
-.topSide {
-  margin-top: 30px;
+.parts {
   width: 90%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.upperPart {
+  margin-top: 30px;
+}
+.lowerPart {
+  align-items: flex-start;
+}
+
 .imgTextLogo {
   margin-left: 10px;
 }
@@ -29,4 +35,45 @@
 }
 .navLinc:hover {
   background-color: #1de9b6;
+}
+
+.privicyPolisy {
+  color: #90a4ae;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -40px;
+}
+.privicyPolisy li {
+  margin-right: 30px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #061e37;
+  transition: 0.3s;
+  color: white;
+}
+//change color text but dont change LI dot
+.privicyPolisy li:hover {
+  border-bottom: 2px solid #1de9b6;
+}
+.privicyPolisy li:hover > span {
+  color: white;
+}
+
+.privicyPolisy li span {
+  color: #90a4ae;
+} /*
+.privicyPolisy li:hover span {
+  color: white;
+}*/
+///////////
+.firstLi {
+  margin-left: 0;
+  list-style-type: none;
+}
+.socialImg {
+  margin-right: 15px;
+  padding: 20px 10px 20px 20px;
+  transition: 0.3s;
+}
+.socialImg:hover {
+  filter: brightness(200%);
 }
