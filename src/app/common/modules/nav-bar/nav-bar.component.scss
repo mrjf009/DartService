@@ -1,27 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 
 :host {
   flex: 1;
 }
 
 .toolbar-wrapper {
+  z-index: 0;
   display: flex;
   flex: 1;
   align-items: center;
   height: 90px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.BGheader {
+.BG-nav-bar {
   padding-top: 2em;
   display: flex;
   width: 100%;
-  height:fit-content;
+  height: fit-content;
   background-image: url(..\..\..\..\assets\bg.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.nav-bar-middle {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 35%;
 }
 
 .logo-img {
@@ -32,10 +43,12 @@
   text-decoration: none;
   cursor: pointer;
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
-  padding-left: 2.5em; 
+  padding-left: 2.5em;
   padding-right: 2.5em;
+  padding-left: 1em;
+  padding-right: 1em;
   &:hover {
     border-color: black;
     color: black;
@@ -45,7 +58,7 @@
 .sign-up {
   background-color: transparent;
   border-color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 15px;
   color: white;
   height: 25px;
@@ -58,5 +71,15 @@
     background-color: transparent;
     border-color: black;
     color: black;
+  }
+}
+
+@media (max-width: 1068px) {
+  .nav-bar-middle {
+    min-width: 100%;
+    justify-content: center;
+  }
+  .toolbar-wrapper {
+    justify-content: center;
   }
 }
