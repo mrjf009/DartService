@@ -81,3 +81,23 @@
 .socialImag:hover {
   filter: brightness(10%);
 }
+
+@media (max-width: 1068px) {
+  .imgWrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 594px) {
+  .imgWrapper {
+    flex-direction: column;
+    margin-top: 2em;
+  }
+  .personImg {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .textBold {
+    margin-top: 2em;
+  }
+}
