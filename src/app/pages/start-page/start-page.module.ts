@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StartPageComponent } from './start-page.component';
-
+import { MatButtonModule } from "@angular/material/button";
 
 
 @NgModule({
@@ -9,7 +9,8 @@ import { StartPageComponent } from './start-page.component';
     StartPageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatButtonModule
   ],
   exports: [
     StartPageComponent

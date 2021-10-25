@@ -1,9 +1,9 @@
 @import "theme";
-
-/* You can add global styles to this file, and also import other style files */
+@import "fonts";
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Raleway SemiBold", arial;
+  display: flex;
 }
