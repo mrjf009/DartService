@@ -23,11 +23,3 @@ describe('StartPageComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-
-@ViewChild('videoPlayer') videoplayer: ElementRef;
-isClicked=false;
-
-play() {
-    this.videoplayer.nativeElement.play();
-    this.isClicked=true;
-}
