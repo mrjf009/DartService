@@ -25,7 +25,10 @@
 .rightSide {
   width: 60%;
   height: 500px;
-  // background-color: royalblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .titleText {
   font-size: 2.5em;
@@ -48,4 +51,55 @@
     background-color: black;
     color: white;
   }
+}
+.stepper {
+  width: 80%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.stepperArrow {
+  width: 100%;
+  height: 50px;
+}
+.arrowUp {
+}
+.arrowDown {
+}
+.steeperBody {
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.stepperElement {
+  width: 90%;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.stepperElementImg {
+  border-radius: 50%;
+  height: 80px;
+}
+.stepperElementSticker {
+  width: 80%;
+  height: 120px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.StickerName {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.StickerText {
+  margin-top: 5px;
 }
