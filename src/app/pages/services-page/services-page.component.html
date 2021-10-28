@@ -13,42 +13,72 @@
     </div>
     <div class="rightSide">
       <div class="stepper">
-        <div class="stepperArrow arrowUp"></div>
-        <div class="steeperBody">
-          <div class="stepperElement stepperElement1">
-            <img
-              src="../../../assets/servicesMan1.png"
-              alt="woman1"
-              class="stepperElementImg"
-            />
-            <div class="stepperElementSticker">
-              <div class="StickerName">John Doe</div>
-              <div class="StickerText">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Placeat labore earum architecto laboriosam, quos odio. Nisi sed
-                veniam odit mollitia! amet consectetur adipisicing elit.
-                Impedit, eligendi?
-              </div>
-            </div>
-          </div>
-          <div class="stepperElement stepperElement2">
-            <img
-              src="../../../assets/servicesWoman1.png"
-              alt="woman1"
-              class="stepperElementImg"
-            />
-            <div class="stepperElementSticker">
-              <div class="StickerName">Khalessi</div>
-              <div class="StickerText">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Placeat labore earum architecto laboriosam, quos odio. Nisi sed
-                veniam odit mollitia! amet consectetur adipisicing elit.
-                Impedit, eligendi?
-              </div>
-            </div>
-          </div>
+        <div class="stepperArrow arrowUp" (click)="pressArrowUp()">
+          <!-- <mat-icon>home</mat-icon> -->
         </div>
-        <div class="stepperArrow arrowDown"></div>
+        <div class="stepperBody">
+          <div class="partBody appear" [ngSwitch]="outputElementUp">
+            <!-- stepperElement1 -->
+
+            <div class="stepperElement" *ngSwitchCase="'stepperElement1'">
+              <img
+                src="../../../assets/servicesMan1.png"
+                alt="woman1"
+                class="stepperElementImg"
+              />
+              <div class="stepperElementSticker">
+                <div class="StickerName">John Doe</div>
+                <div class="StickerText">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Placeat labore earum architecto laboriosam, quos odio. Nisi
+                  sed veniam odit mollitia! amet consectetur adipisicing elit.
+                  Impedit, eligendi?
+                </div>
+              </div>
+            </div>
+
+            <!-- stepperElement2 -->
+
+            <div class="stepperElement" *ngSwitchCase="'stepperElement2'">
+              <img
+                src="../../../assets/servicesWoman1.png"
+                alt="woman1"
+                class="stepperElementImg"
+              />
+              <div class="stepperElementSticker">
+                <div class="StickerName">Khalessi</div>
+                <div class="StickerText">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Placeat labore earum architecto laboriosam, quos odio. Nisi
+                  sed veniam odit mollitia! amet consectetur adipisicing elit.
+                  Impedit, eligendi?
+                </div>
+              </div>
+            </div>
+
+            <!-- stepperElement3 -->
+
+            <div class="stepperElement" *ngSwitchCase="'stepperElement3'">
+              <img
+                src="../../../assets/servicesMan1.png"
+                alt="woman1"
+                class="stepperElementImg"
+              />
+              <div class="stepperElementSticker">
+                <div class="StickerName">John Doe</div>
+                <div class="StickerText">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Placeat labore earum architecto laboriosam, quos odio. Nisi
+                  sed veniam odit mollitia! amet consectetur adipisicing elit.
+                  Impedit, eligendi?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="partBody lower" [ngSwitch]="outputElementDown"></div>
+        </div>
+
+        <div class="stepperArrow arrowDown" (click)="pressArrowDown()"></div>
       </div>
     </div>
   </div>
