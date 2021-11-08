@@ -25,6 +25,15 @@ export class ServicesPageComponent implements OnInit {
         this.countClick > this.elementList.length - 2 ? 0 : this.countClick + 1
       ];
   }
-  pressArrowDown() {}
+  pressArrowDown() {
+    if (--this.countClick < this.elementList.length - this.elementList.length) {
+      this.countClick = this.elementList.length - 1;
+    }
+    this.outputElementUp = this.elementList[this.countClick];
+    this.outputElementDown =
+      this.elementList[
+        this.countClick > this.elementList.length - 2 ? 0 : this.countClick + 1
+      ];
+  }
   ngOnInit(): void {}
 }
