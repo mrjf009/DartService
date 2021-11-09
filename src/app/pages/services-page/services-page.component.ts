@@ -15,25 +15,24 @@ export class ServicesPageComponent implements OnInit {
   outputElementUp = this.elementList[this.countClick];
   outputElementDown = this.elementList[this.countClick + 1];
   constructor() {}
+  ngOnInit(): void {}
   pressArrowUp() {
     if (++this.countClick > this.elementList.length - 1) {
       this.countClick = 0;
     }
-    this.outputElementUp = this.elementList[this.countClick];
-    this.outputElementDown =
-      this.elementList[
-        this.countClick > this.elementList.length - 2 ? 0 : this.countClick + 1
-      ];
+    this.setOutputElement();
   }
   pressArrowDown() {
-    if (--this.countClick < this.elementList.length - this.elementList.length) {
+    if (--this.countClick < 0) {
       this.countClick = this.elementList.length - 1;
     }
+    this.setOutputElement();
+  }
+  private setOutputElement() {
     this.outputElementUp = this.elementList[this.countClick];
     this.outputElementDown =
       this.elementList[
         this.countClick > this.elementList.length - 2 ? 0 : this.countClick + 1
       ];
   }
-  ngOnInit(): void {}
 }
