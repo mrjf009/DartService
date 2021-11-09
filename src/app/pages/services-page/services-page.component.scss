@@ -1,13 +1,13 @@
 .lowerPart {
   width: 100%;
   height: 500px;
-
-  background-image: url(../../../assets/servicesBg.png);
+  background-image: url(../../../assets/img/servicesBg.png);
 }
 .bgMask {
   width: 100%;
-  height: 500px;
+  height: auto;
   display: flex;
+  align-items: center;
   background: linear-gradient(
     270deg,
     rgba(16, 192, 211, 0.95) 30%,
@@ -47,6 +47,9 @@
   background-color: white;
   transition: 0.3s;
   text-align: center;
+  -webkit-box-shadow: 4px 4px 14px 0px rgba(34, 60, 80, 0.4);
+  -moz-box-shadow: 4px 4px 14px 0px rgba(34, 60, 80, 0.4);
+  box-shadow: 4px 4px 14px 0px rgba(34, 60, 80, 0.4);
   &:hover {
     background-color: black;
     color: white;
@@ -63,16 +66,23 @@
   height: 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.arrowUp {
+  margin-bottom: 10px;
+}
+.arrowDown {
+  margin-top: 10px;
 }
 .arrow {
   width: 50px;
   height: 50px;
   font-size: 50px;
-  padding: 20px 30px 20px 30px;
   color: white;
   transition: 0.3s;
   &:hover {
     color: black;
+    cursor: pointer;
   }
 }
 .stepperBody {
@@ -94,6 +104,9 @@
 .stepperElementImg {
   border-radius: 50%;
   height: 80px;
+  -webkit-box-shadow: 4px 4px 14px 0px rgba(34, 60, 80, 0.4);
+  -moz-box-shadow: 4px 4px 14px 0px rgba(34, 60, 80, 0.4);
+  box-shadow: 4px 4px 14px 0px rgba(34, 60, 80, 0.4);
 }
 .stepperElementSticker {
   width: 80%;
@@ -103,6 +116,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-left: 10px;
+  padding: 0px 15px 0px 15px;
+  -webkit-box-shadow: 4px 4px 14px 0px rgba(34, 60, 80, 0.4);
+  -moz-box-shadow: 4px 4px 14px 0px rgba(34, 60, 80, 0.4);
+  box-shadow: 4px 4px 14px 0px rgba(34, 60, 80, 0.4);
 }
 .stickerName {
   font-size: 1.3em;
@@ -110,4 +128,56 @@
 }
 .stickerText {
   margin-top: 5px;
+  font-style: italic;
+  color: #90a4ae;
+}
+@media (max-width: 1068px) {
+  .stepperElementSticker {
+    height: 150px;
+  }
+  .leftSide {
+    width: 50%;
+    height: 500px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .rightSide {
+    width: 50%;
+    height: 500px;
+  }
+  .stickerText {
+    overflow: scroll;
+  }
+}
+@media (max-width: 770px) {
+  .lowerPart {
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .bgMask {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .leftSide {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightSide {
+    width: 100%;
+  }
+  .stickerText {
+    overflow: scroll;
+  }
+  .simpleText {
+    width: 80%;
+    text-align: center;
+  }
 }
