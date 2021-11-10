@@ -56,9 +56,6 @@
   margin: 0;
 }
 
-@media (max-width: 1068px) {
-  .mat-accordion {
-    max-width: 90%;
 .lowerPart {
   width: 100%;
   height: 500px;
@@ -193,6 +190,9 @@
   color: #90a4ae;
 }
 @media (max-width: 1068px) {
+  .mat-accordion {
+    max-width: 90%;
+  }
   .stepperElementSticker {
     height: 150px;
   }

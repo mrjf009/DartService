@@ -7,13 +7,7 @@ import { MatAccordionDisplayMode } from '@angular/material/expansion';
   styleUrls: ['./services-page.component.scss'],
 })
 export class ServicesPageComponent implements OnInit {
-<<<<<<< HEAD
   mode: MatAccordionDisplayMode = 'default';
-
-  constructor() {}
-
-  ngOnInit(): void {}
-=======
   elementList: string[] = [
     'stepperElement1',
     'stepperElement2',
@@ -43,5 +37,4 @@ export class ServicesPageComponent implements OnInit {
         this.countClick > this.elementList.length - 2 ? 0 : this.countClick + 1
       ];
   }
->>>>>>> feature/servicesLowerPart
 }
