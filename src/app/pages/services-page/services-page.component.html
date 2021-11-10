@@ -182,3 +182,109 @@
     </mat-expansion-panel>
   </mat-accordion>
 </section>
+<div class="lowerPart">
+  <div class="bgMask">
+    <div class="leftSide">
+      <div class="titleText">
+        What our customers
+        <div>have to say about us.</div>
+      </div>
+      <div class="simpleText">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+        deserunt officia tenetur, alias quidem.
+      </div>
+      <div class="simpleButton">get started</div>
+    </div>
+    <div class="rightSide">
+      <div class="stepper">
+        <div class="stepperArrow arrowUp" (click)="pressArrowUp()">
+          <mat-icon class="arrow">expand_less</mat-icon>
+        </div>
+        <div class="stepperBody">
+          <div class="partBody upper" [ngSwitch]="outputElementUp">
+            <ng-container *ngSwitchCase="'stepperElement1'">
+              <ng-container *ngTemplateOutlet="stepperElement1"></ng-container>
+            </ng-container>
+            <ng-container *ngSwitchCase="'stepperElement2'">
+              <ng-container *ngTemplateOutlet="stepperElement2"></ng-container>
+            </ng-container>
+            <ng-container *ngSwitchCase="'stepperElement3'">
+              <ng-container *ngTemplateOutlet="stepperElement3"></ng-container>
+            </ng-container>
+          </div>
+          <div class="partBody lower" [ngSwitch]="outputElementDown">
+            <ng-container *ngSwitchCase="'stepperElement1'">
+              <ng-container *ngTemplateOutlet="stepperElement1"></ng-container>
+            </ng-container>
+            <ng-container *ngSwitchCase="'stepperElement2'">
+              <ng-container *ngTemplateOutlet="stepperElement2"></ng-container>
+            </ng-container>
+            <ng-container *ngSwitchCase="'stepperElement3'">
+              <ng-container *ngTemplateOutlet="stepperElement3"></ng-container>
+            </ng-container>
+          </div>
+          <!-- template 1 -->
+          <ng-template #stepperElement1>
+            <div class="stepperElement">
+              <img
+                src="../../../assets/img/servicesMan1.png"
+                alt="woman1"
+                class="stepperElementImg"
+              />
+              <div class="stepperElementSticker">
+                <div class="stickerName">John Doe</div>
+                <div class="stickerText">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Placeat labore earum architecto laboriosam, quos odio. Nisi
+                  sed veniam odit mollitia! amet consectetur adipisicing elit.
+                  Impedit, eligendi?
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <!-- template  2-->
+          <ng-template #stepperElement2>
+            <div class="stepperElement">
+              <img
+                src="../../../assets/img/servicesWoman1.png"
+                alt="woman1"
+                class="stepperElementImg"
+              />
+              <div class="stepperElementSticker">
+                <div class="stickerName">Khalessi</div>
+                <div class="stickerText">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Placeat labore earum architecto laboriosam, quos odio. Nisi
+                  sed veniam odit mollitia! amet consectetur adipisicing elit.
+                  Impedit, eligendi?
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <!-- template  3-->
+          <ng-template #stepperElement3>
+            <div class="stepperElement">
+              <img
+                src="../../../assets/img/WhFr+w.png"
+                alt="woman1"
+                class="stepperElementImg"
+              />
+              <div class="stepperElementSticker">
+                <div class="stickerName">Dangeon Master</div>
+                <div class="stickerText">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Placeat labore earum architecto laboriosam, quos odio. Nisi
+                  sed veniam odit mollitia! amet consectetur adipisicing elit.
+                  Impedit, eligendi?
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+        <div class="stepperArrow arrowDown" (click)="pressArrowDown()">
+          <mat-icon class="arrow">expand_more</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
